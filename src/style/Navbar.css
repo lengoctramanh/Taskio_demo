@@ -1,0 +1,133 @@
+.site-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf5;
+  box-shadow: 0 4px 20px rgba(27, 52, 86, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1320px;
+  min-height: 94px;
+  margin: 0 auto;
+  padding: 0 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #172b4d;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0c66e4, #6554c0);
+  color: white;
+  font-size: 25px;
+  box-shadow: 0 6px 14px rgba(12, 102, 228, 0.22);
+}
+
+.brand-dot {
+  color: #0c66e4;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-links a {
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: #52627a;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-links a:hover {
+  color: #0c66e4;
+  background: #f0f6ff;
+}
+
+.navbar-links a.active {
+  color: #0c66e4;
+  background: #eaf2ff;
+}
+
+.navbar-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background: #0c66e4;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 5px 12px rgba(12, 102, 228, 0.2);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.navbar-button:hover {
+  background: #0055c7;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    min-height: 80px;
+    padding: 14px 20px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-button {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .navbar-links a svg {
+  display: block;
+  flex-shrink: 0;
+}
+}

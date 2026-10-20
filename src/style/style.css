@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #172b4d;
+  background: #f4f5f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #0c66e4;
+  color: white;
+  text-decoration: none;
+}
